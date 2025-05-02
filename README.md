@@ -49,7 +49,6 @@ hands-on-ml/
 ### 2. Unsupervised Learning
 - `kmeans_iris.ipynb`: Cluster flowers using K-Means.
 - `hierarchical_dbscan.ipynb`: Explore advanced clustering.
-- `pca_digits.ipynb`: Dimensionality reduction with PCA.
 - `tsne_visualization.ipynb`: Visualize high-dimensional data with t-SNE.
 
 ### 3. Preprocessing and EDA
