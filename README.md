@@ -1,140 +1,94 @@
-# 🤖 Hands-On Machine Learning with Python
+# Machine Learning Project
 
-Welcome to the **Hands-On Machine Learning with Python** project!  
-This repository contains a comprehensive, hands-on exploration of various machine learning techniques using Python and widely-used libraries such as `scikit-learn`, `pandas`, `seaborn`, and `matplotlib`. Each topic is covered with real-world datasets and focuses on learning by doing.
+This repository contains a collection of machine learning notebooks and resources, organized into different categories. Below is an overview of the project structure and the contents of each folder.
 
----
-
-## 📌 Objectives
-
-- Implement and compare a variety of **supervised** and **unsupervised** learning methods.
-- Practice **data preprocessing**, **feature selection**, and **visualization**.
-- Explore **model evaluation**, **hyperparameter tuning**, and **pipelines**.
-- Gain experience with **ensemble methods**, **time series**, and **natural language processing**.
-- Learn to build and structure machine learning projects professionally.
-
----
-
-## 🗂️ Project Structure
+## Project Structure
 
 ```
-hands-on-ml/
-├── README.md
-├── requirements.txt
-├── utils/
-│   └── helpers.py
-├── data/
-├── notebooks/
-│   ├── 01-supervised/
-│   ├── 02-unsupervised/
-│   ├── 03-preprocessing-eda/
-│   ├── 04-evaluation-tuning/
-│   └── 05-advanced/
-├── reports/
-│   └── final-summary.md
-└── LICENSE
+01-supervised/
+    decision_trees.ipynb
+    gradient_boosting.ipynb
+    linear_regression.ipynb
+    logistic_regression.ipynb
+    svm_digits.ipynb
+    usa_housing_model.pkl
+02-unsupervised/
+    hierarchical_dbscan.ipynb
+    kmeans_clustering.gif
+    kmeans_iris.ipynb
+    tsne_visualization.ipynb
+03-preprocessing-eda/
+    eda_titanic.ipynb
+    feature_selection.ipynb
+    preprocessing_pipeline.ipynb
+04-evaluation-tuning/
+    crossval_gridsearch.ipynb
+    model_metrics.ipynb
+05-advanced/
+    ensemble_comparison.ipynb
+    nlp_sentiment_analysis.ipynb
+    time_series_forecasting.ipynb
+LICENSE
+README.md
 ```
 
 ---
 
-## 📘 Topics Covered
+## Folder Details
 
-### 1. Supervised Learning
-- `linear_regression.ipynb`: Predict house prices with linear regression.
-- `logistic_regression.ipynb`: Classify Breast Cancer Cases.
-- `decision_trees.ipynb`, `random_forest.ipynb`: Tree-based models on classification tasks.
-- `gradient_boosting.ipynb`: Use XGBoost/LightGBM for boosted performance.
-- `svm_digits.ipynb`: Digit classification with Support Vector Machines.
+### 01-supervised/
+This folder contains notebooks related to supervised learning techniques:
+- **`decision_trees.ipynb`**: Implementation of decision trees with feature importance visualization.
+- **`gradient_boosting.ipynb`**: Comparison of XGBoost and LightGBM with ROC curve analysis.
+- **`linear_regression.ipynb`**: Linear regression for predicting housing prices.
+- **`logistic_regression.ipynb`**: Logistic regression with metrics like accuracy, confusion matrix, and ROC-AUC.
+- **`svm_digits.ipynb`**: Support Vector Machines for digit classification using the MNIST dataset.
 
-### 2. Unsupervised Learning
-- `kmeans_iris.ipynb`: Cluster flowers using K-Means.
-- `hierarchical_dbscan.ipynb`: Explore advanced clustering.
-- `tsne_visualization.ipynb`: Visualize high-dimensional data with t-SNE.
+### 02-unsupervised/
+This folder focuses on unsupervised learning techniques:
+- **`hierarchical_dbscan.ipynb`**: HDBSCAN and DBSCAN clustering with visualization of linkage and condensed trees.
+- **`kmeans_clustering.gif`**: Animated visualization of K-Means clustering.
+- **`kmeans_iris.ipynb`**: K-Means clustering applied to the Iris dataset.
+- **`tsne_visualization.ipynb`**: t-SNE for dimensionality reduction and visualization.
 
-### 3. Preprocessing and EDA
-- `eda_titanic.ipynb`: Visualize and understand the Titanic dataset.
-- `preprocessing_pipeline.ipynb`: Clean and transform data using `Pipeline`.
-- `feature_selection.ipynb`: Identify important features.
+### 03-preprocessing-eda/
+This folder includes preprocessing and exploratory data analysis (EDA) notebooks:
+- **`eda_titanic.ipynb`**: EDA on the Titanic dataset with visualizations, feature engineering, and correlation heatmaps.
+- **`feature_selection.ipynb`**: Feature selection using ANOVA F-test, mutual information, and Random Forest importance.
+- **`preprocessing_pipeline.ipynb`**: End-to-end preprocessing pipeline with feature scaling, encoding, and model evaluation.
 
-### 4. Model Evaluation and Tuning
-- `model_metrics.ipynb`: Evaluate model performance using metrics.
-- `crossval_gridsearch.ipynb`: Tune models with cross-validation.
+### 04-evaluation-tuning/
+This folder contains notebooks for model evaluation and hyperparameter tuning:
+- **`crossval_gridsearch.ipynb`**: Cross-validation and grid search for hyperparameter optimization.
+- **`model_metrics.ipynb`**: Evaluation metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
 
-### 5. Advanced Topics
-- `ensemble_comparison.ipynb`: Compare ensemble techniques.
-- `time_series_forecasting.ipynb`: Forecast future data (e.g., stock prices).
-- `nlp_sentiment_analysis.ipynb`: Classify text sentiments using Naive Bayes.
-
----
-
-## ⚙️ Setup Instructions
-
-### 🐍 Using `pip`:
-```bash
-git clone https://github.com/your-username/hands-on-ml.git
-cd hands-on-ml
-pip install -r requirements.txt
-```
-
-### 🛆 Or with Conda:
-```bash
-conda env create -f environment.yml
-conda activate hands-on-ml
-```
+### 05-advanced/
+This folder explores advanced machine learning topics:
+- **`ensemble_comparison.ipynb`**: Comparison of ensemble methods like Random Forest, Gradient Boosting, and Extra Trees.
+- **`nlp_sentiment_analysis.ipynb`**: Sentiment analysis using Naive Bayes on the NLTK movie reviews dataset.
+- **`time_series_forecasting.ipynb`**: Time series forecasting with models like ARIMA and Holt-Winters.
 
 ---
 
-## 🚀 Getting Started
+## License
 
-1. Launch Jupyter:
-```bash
-jupyter notebook
-```
-2. Navigate to the `notebooks/` directory.
-3. Start exploring from any section of interest!
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
----
+--- 
 
-## 🧰 Tech Stack
+## How to Use
 
-- Python 3.10+
-- `scikit-learn`
-- `pandas`
-- `numpy`
-- `seaborn`
-- `matplotlib`
-- `xgboost`, `lightgbm`
-- `umap-learn`, `nltk`
-- `jupyter`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/alireza-astane/ML_Exercises.git
+   cd ml-project
+   ```
 
----
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## 📈 Example Datasets Used
+3. Explore the notebooks in the `notebooks/` directory.
 
-- Titanic (Kaggle)
-- California Housing (scikit-learn)
-- Iris (UCI)
-- MNIST Digits (scikit-learn)
-- Movie Reviews (NLTK)
-- Stock or Weather data (Yahoo Finance)
-
----
-
-## 📊 Visual Examples
-
-All notebooks contain graphs and tables created using:
-- `matplotlib`, `seaborn` for EDA
-- `PCA`, `t-SNE` plots for dimensionality reduction
-- Confusion matrices, ROC curves, feature importances
-
----
-
-## 📄 Final Report
-
-📝 A detailed summary of the project findings and model performances is available in [`reports/final-summary.md`](reports/final-summary.md).
-
----
-
-## 📜 License
-
-This project is open source under the [MIT License](LICENSE).
+--- 
