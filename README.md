@@ -59,7 +59,6 @@ hands-on-ml/
 ### 4. Model Evaluation and Tuning
 - `model_metrics.ipynb`: Evaluate model performance using metrics.
 - `crossval_gridsearch.ipynb`: Tune models with cross-validation.
-- `pipeline_demo.ipynb`: Build complete ML workflows.
 
 ### 5. Advanced Topics
 - `ensemble_comparison.ipynb`: Compare ensemble techniques.
